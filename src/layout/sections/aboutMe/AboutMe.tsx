@@ -17,14 +17,19 @@ export const AboutMe = () => {
 };
 
 const StyledAboutMe = styled.section`
-    background-color: blue;
-    p {
-        max-width: 843px;
-    }
     display: flex;
-    
+    flex-direction: column;
+    padding-left: 189px;
+    padding-bottom: 130px;
 `
 
 const Text = styled.p`
-
+    max-width: 843px;
+    color: var(--text, #BDEBEA);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+    letter-spacing: 0.72px;
 `

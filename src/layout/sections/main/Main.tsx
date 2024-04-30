@@ -6,7 +6,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper justify="space-around" align="center">
+            <FlexWrapper align="center">
                 <TextBlock>
                     <MainTitle>WEB DEVELOPER</MainTitle>
                     <Name>John Doe</Name>
@@ -28,11 +28,19 @@ const Photo = styled.img`
     width: 417px;
 `
 
-const StyledMain = styled.div`
-    background-color: red;
+const StyledMain = styled.section`
+    background-color: #041F31;
+    padding-left: 188px;
 `
 const TextBlock = styled.p`
     max-width: 514px;
+    color: var(--text, #BDEBEA);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.64px;
 `
 const MainTitle = styled.h1`
     color: #D7E5EC;
@@ -43,6 +51,7 @@ const MainTitle = styled.h1`
     line-height: normal;
 `
 const Name = styled.h3`
+    margin: 0px;
     font-family: Montserrat, sans-serif;
     font-size: 72px;
     font-style: normal;
