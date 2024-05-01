@@ -4,6 +4,7 @@ import {Menu} from "../../components/menu/Menu";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Button} from "../../components/Button";
+import {theme} from "../../styles/Theme";
 
 // const items = ["Projects","Contact"]
 
@@ -21,21 +22,18 @@ export const Header = () => {
                     </FlexWrapper>
                     <Button>Contact</Button>
                 </FlexWrapper>
-
             </Container>
-
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-    background-color: #041F31;
+    background-color: ${theme.colors.primaryBg};
     padding-top: 27px;
- 
 `
 
 const StyledLink = styled.a`
-    color: var(--text, #BDEBEA);
+    color: ${theme.colors.font};
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-style: normal;

@@ -23,6 +23,5 @@ const StyledMenu = styled.nav`
     ul {
         display: flex;
         gap: 30px;
-           
     }
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme";
 
 export const Button = styled.button`
     display: inline-flex; 
@@ -7,7 +8,7 @@ export const Button = styled.button`
     align-items: center;
     gap: 10px;
     border-radius: 6px;
-    background: var(--gradient, linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%));
+    background: ${theme.colors.gradient};
 
     color: #252728;
     text-align: center;
